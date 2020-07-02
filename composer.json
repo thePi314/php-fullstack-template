@@ -1,0 +1,12 @@
+{
+    "name": "mrpi/outsideri",
+    "authors": [
+        {
+            "name": "thePi314",
+            "email": "the.pi@outlook.com"
+        }
+    ],
+    "require": {
+        "eftec/bladeone": "^3.46"
+    }
+}

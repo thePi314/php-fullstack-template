@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'socialmedia';
+    src: url('../fonts/socialmedia.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    min-height: 100vh;
+}

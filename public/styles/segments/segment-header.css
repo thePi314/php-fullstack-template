@@ -1,0 +1,51 @@
+@keyframes wobble-hor-top {
+    0%,100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+    15% {
+        transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+        transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+        transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+        transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+        transform: translateX(-6px) rotate(1.2deg);
+    }
+}
+  
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    position: fixed;
+    z-index: 1000;
+    background:#101010;
+    padding-bottom: 4px;
+
+    top: 0;
+}
+
+.header > .header-item {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 48px;
+    font-family: hangin;
+    text-shadow: 0px 0px 2px whitesmoke;
+}
+
+.header > .header-item.active {
+    color: lightgrey;
+}
+
+.header > .header-item:hover {
+    animation: wobble-hor-top 0.8s both;
+}
